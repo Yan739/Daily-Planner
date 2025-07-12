@@ -49,11 +49,16 @@ header {
   padding: 20px;
 }
 
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .to-do {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .to-do-list {
   list-style: none;
@@ -71,7 +76,7 @@ header {
 .to-do-list p {
   display: flex;
   justify-content: center;
-  background-color: orange;
+  background-color: rgb(243, 203, 130);
   margin-bottom: 10px;
 }
 
@@ -110,4 +115,56 @@ header {
   text-align: center;
   margin-bottom: 10px;
   background-color: rgb(247, 223, 183);
+}
+
+.goals {
+  background-color: rgb(240, 204, 191);
+}
+
+.goals-list p {
+  display: flex;
+  justify-content: center;
+}
+
+.goals-list li {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.goals-list input[type="text"] {
+  border: none;
+  outline: none;
+  background-color: rgb(240, 204, 191);
+}
+
+.note {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.note-title {
+  text-align: center;
+  font-weight: bold;
+  background-color: orange;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.note-area {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 2; 
+  font-family: "Courier New", monospace;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fffaf0,
+    #fffaf0 29px,
+    #ccc 30px
+  );
 }
