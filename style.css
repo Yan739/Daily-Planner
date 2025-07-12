@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, "Times New Roman", Times,
+    serif, Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow", Arial,
+    sans-serif, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(233, 232, 228);
+}
+
+.logo {
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.date-time {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: rgb(245, 242, 230);
+}
+
+.weather-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.separate {
+  border: solid;
+  border-width: 0.5px;
+}
+
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.to-do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.to-do-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.to-do-list li {
+  display: flex;
+  align-items: left;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.to-do-list p {
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+  margin-bottom: 10px;
+}
+
+.to-do-list input[type="text"] {
+  border: none;
+  padding: 5px;
+  background: transparent;
+  font-size: 16px;
+  border-bottom: 2px solid #333;
+  outline: none;
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.schedule-table {
+  border-collapse: collapse;
+}
+
+.schedule-table td {
+  padding: 10px;
+  border: 1.5px solid rgb(238, 219, 184);
+}
+
+.schedule-table input[type="text"] {
+  border: none;
+  background: transparent;
+  padding: 5px;
+  outline: none;
+}
+.schedule-title {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: rgb(247, 223, 183);
+}
