@@ -5,12 +5,14 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif, "Times New Roman", Times,
     serif, Tahoma, Geneva, Verdana, sans-serif, "Arial Narrow", Arial,
     sans-serif, sans-serif;
+  overflow-x: hidden;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 20px;
   background-color: rgb(233, 232, 228);
 }
@@ -21,19 +23,49 @@ header {
 }
 
 .date-time {
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background: radial-gradient(circle at 30% 30%, #f5f2e6, #b4ac8d); 
+  border-radius: 30% 40% 30% 50% / 40% 30% 50% 30%; 
+  box-shadow: 0 0 30px 5px rgba(245, 242, 230, 0.8); 
+  filter: blur(0.3px); 
+  backdrop-filter: blur(1px); 
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.calendar-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 16px;
+}
+.calendar-table th,
+.calendar-table td {
   border: 1px solid #ccc;
-  padding: 10px;
-  background-color: rgb(245, 242, 230);
+  width: 30px;
+  height: 18px;
+  text-align: center;
+}
+
+.weather {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .weather-list {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  list-style: none;
   gap: 10px;
-  padding-left: 0px;
-  margin-left: 0px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .separate {
@@ -43,10 +75,25 @@ header {
 
 .main-content {
   display: flex;
+  position: relative;
   align-items: flex-start;
   justify-content: center;
   gap: 40px;
   padding: 20px;
+}
+
+.main-img1 {
+  position: absolute;
+  margin-right: 1050px;
+  margin-top: 75px;
+  z-index: 10;
+}
+
+.main-img2 {
+  position: absolute;
+  margin-left: 1050px;
+  margin-top: 75px;
+  z-index: 10;
 }
 
 .left-column {
@@ -128,13 +175,14 @@ header {
 
 .goals-list li {
   list-style: none;
-  padding-left: 5px;
+  padding: 5px;
 }
 
 .goals-list input[type="text"] {
   border: none;
   outline: none;
   background-color: rgb(240, 204, 191);
+  padding-left: 10px;
 }
 
 .note {
@@ -159,7 +207,7 @@ header {
   border: 2px solid #ccc;
   padding: 10px;
   font-size: 16px;
-  line-height: 2; 
+  line-height: 2;
   font-family: "Courier New", monospace;
   background: repeating-linear-gradient(
     to bottom,
